@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import './index.css'
 function UseEffectHook() {
     const [data, setData] = useState([])
     const [error, setError] = useState(null)
