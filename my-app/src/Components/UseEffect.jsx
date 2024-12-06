@@ -24,16 +24,19 @@ function UseEffectHook() {
          <li className="data">
              <h2>DATA</h2>
             <h3>{text.id}</h3>
+            <h3>{text.name}</h3>
          </li>: <h3>null</h3>}                  
         </div>
                 ))
             ) : (
         <h3 style={{textAlign:"center",fontFamily:"sans-serif",color:"white"}}>Data will display after incrementing</h3>
             )}
-            <p className="count">Count: {count}</p>
+            <p className="count">Counted: {count}</p>
           <div className="btn">
          <button onClick={() => 
             setCount(count + 1)}>Increment</button>
+         <button onClick={() => 
+            setCount(count - 1)}>Decrement</button>
         </div>
         </div>
     )
